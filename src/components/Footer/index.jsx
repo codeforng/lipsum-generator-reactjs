@@ -1,10 +1,11 @@
 import React from "react";
+import { GitBtn } from "../../components";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-100 py-8">
-      <div className="container flex items-center justify-between py-4 mx-auto">
-        <p className="text-sm">
+    <footer className="bg-slate-200 py-3 fixed bottom-0 w-full">
+      <div className="container flex flex-col gap-2 items-center justify-center py-4 mx-auto">
+        <p className="text-md text-slate-900">
           Made by{" "}
           <span className="font-bold">
             {" "}
@@ -13,7 +14,7 @@ const Footer = () => {
             </a>{" "}
           </span>{" "}
           for{" "}
-          <span className="underline decoration-wavy decoration-indigo-700">
+          <span className="underline decoration-wavy font-semibold decoration-indigo-700">
             <a
               href="https://www.100daysofcode.com/"
               target={"_blank"}
@@ -24,9 +25,7 @@ const Footer = () => {
           </span>
         </p>
 
-        <div className="flex gap-1 items-center justify-center">
-
-        </div>
+        <GitBtn/>
       </div>
     </footer>
   );

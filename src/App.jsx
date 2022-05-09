@@ -1,11 +1,12 @@
-import { Footer, Header } from "./components";
+import { Footer, Header, Main } from "./components";
 
 function App() {
   return (
-    <>
-    <Header/>
+    <div className="bg-slate-200 overflow-x-hidden min-h-screen">
+      <Header />
+      <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
